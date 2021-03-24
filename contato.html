@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" /><!--DEIXA A TELA RESPONSIVA-->
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="caixa-cabecalho">
+            <h1>Bima <br /> Crochê</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="main-contato">
+            <form method="post">
+                <label>NOME COMPLETO<input type="text" name="nomeCompleto" class="input" required /></label>
+                <label>E-MAIL<input type="text" name="email" class="input" required placeholder="seuemail@provedor.com.br" /></label>
+                <label>TELEFONE<input type="tel" name="telefone" class="input" required placeholder="(xx) xxxxx-xxxx" /></label>
+                <label for="mensagem">MENSAGEM</label>
+                <textarea cols="30" rows="10" name="mensagem" class="input" required id="mensagem"></textarea>
+                <input type="submit" name="BTenviar" value="Enviar" id="BTenviar" onclick="BTenviar()" />
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="caixa-rodape">
+            <p id="contato-titulo">Contato</p>
+            <p>
+                <img src="mail-inbox-app.png" width="20" height="20" /> bimacroche@gmail.com <br />
+                <img src="whatsapp.png" width="20" height="20" /> (11) 94658-3442
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

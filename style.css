@@ -1,0 +1,202 @@
+﻿body {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%
+}
+
+/*CABEÇALHO DE TODAS AS PÁGINAS*/
+header {
+    background: #FDD8FF;
+}
+
+.caixa-cabecalho {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Lucida Handwriting', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: #70167A;
+}
+
+nav {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: mediumpurple;
+}
+
+
+/*PÁGINA INICIAL*/
+.main-inicial {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.main-inicial ul {
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.main-inicial li {
+    display: inline-block;
+    width: 294px;
+    height: 294px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.main-inicial li:hover {
+    transform: scale(1.45);
+    border: 2px groove black;
+    background-color: white;
+    opacity: 1;
+}
+
+
+/*PÁGINA DE CONTATO*/
+ .main-contato {
+    background: url(linhas.jpg);
+    background-size: cover;
+}
+
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(235,166,247,0.90);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    padding: 20px 10px 0 10px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin: 0 20px 20px 0px;
+}
+
+#mensagem {
+    margin: 0px 30px 30px 10px;
+    width: 97%;
+}
+
+#BTenviar {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 15px 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#BTenviar:hover {
+    background-color: mediumpurple;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*RODAPÉ DE TODAS AS PÁGINAS*/
+footer {
+    background-color: #FDD8FF;
+}
+
+.caixa-rodape {
+    width: 1000px;
+    height: 150px;
+    position: relative;
+}
+
+#contato-titulo {
+    font-size: 1.3em;
+    padding: 30px 0 10px 20px;
+    margin: 0 40px;
+}
+
+
+footer p {
+    text-align: left;
+    font-weight: bold;
+    color: #70167A;
+    padding: 0 0 20px 20px;
+    margin: 0px 40px;
+    color: black;
+    line-height: 25px;
+    vertical-align: middle; 
+}
+
+/*PARA DEIXAR A TELA RESPONSIVA*/
+@media screen and (max-width:480px) {
+    /*cabeçalho*/
+    .caixa-cabecalho {
+        width:auto
+    }
+    h1 {
+        padding: 20px 0 0 0;
+        position: static;
+    }
+    nav {
+        position: absolute;
+        top: 150px;
+        text-align: center;
+    }
+
+    /*main-contato*/
+    .main-contato, form, form label, .input, #mensagem {
+        width: auto;
+    }
+
+    /*rodapé*/
+    .caixa-rodape {
+        width: auto;
+    }
+
+    #contato-titulo {
+        padding: 30px 0 10px 0px;
+    }
+
+    footer p {
+        padding: 0 0 20px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
