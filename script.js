@@ -1,29 +1,20 @@
-//funÁ„o que È acionada quando o bot„o Enviar È apertado
-var btEnviar = document.getElementById('BTenviar');
-var popup = document.querySelectorAll('popup');
-var input = document.getElementsByClassName('input');
+//fun√ß√£o que √© acionada quando o bot√£o Enviar √© apertado
+const sendbutton = document.getElementById('BTenviar');
+const popup = document.querySelectorAll('popup');
+const input = document.getElementsByClassName('input');
 
 
-if (btEnviar.addEventListener("click", function () {
-    
-    var contador = 0;
-
-    for (var i = 0; i < input.length; i++) {
+sendbutton.addEventListener("click", function () { 
+    let isValidated = false;
+    for (var i = 0; i < input.length - 1; i++) {
         if (input[i].value != "") {
-            contador++;
+            isValidated = true;
         }
     }
 
-    if (contador == input.length) {
+    if (isValidated) {
         alert("Mensagem enviada com sucesso!");
     } else {
         alert("Por favor, preencha os dados requisitados");
     }
-}))
-
-(function () {
-    ("popup").colorbox();
-});
-
-
-
+})
